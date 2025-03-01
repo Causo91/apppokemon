@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:apppokemon/routes/routes.dart';
 import 'package:apppokemon/repositories/pokemon_repository.dart';
-import 'package:apppokemon/data_sources/poke_api_data_source.dart'; // Importa el data source
+import 'package:apppokemon/data_sources/poke_api_data_source.dart'; 
 
 void main() {
-  final dataSource = PokeApiDataSource(); // ✅ Crea la instancia del data source
+  final dataSource = PokeApiDataSource();
   final repository = PokemonRepository(
     dataSource: dataSource,
-  ); // ✅ Pásalo al repositorio
+  );
 
   runApp(MainApp(repository: repository));
 }
